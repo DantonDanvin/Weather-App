@@ -46,7 +46,7 @@ WeatherSense is created by me , which means you are free to use, modify, and dis
 
 # Contact
 
-If you have any questions, feedback, or inquiries, please don't hesitate to reach out to me. You can contact me by email - anantaggcsai@gmail.com 
+If you have any questions, feedback, or inquiries, please don't hesitate to reach out to me. You can contact me by email - allaccept101@gmail.com 
 or create an issue on the GitHub repository.
 
 # Final Thoughts
