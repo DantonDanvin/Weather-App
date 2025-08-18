@@ -61,9 +61,9 @@ function getfromSessionStorage() {
 
 async function fetchUserWeatherInfo(coordinates) {
     const {lat, lon} = coordinates;
-    // make grantcontainer invisible
+    
     grantAccessContainer.classList.remove("active");
-    //make loader visible
+ 
     loadingScreen.classList.add("active");
 
     //API CALL
@@ -79,14 +79,14 @@ async function fetchUserWeatherInfo(coordinates) {
     }
     catch(err) {
         loadingScreen.classList.remove("active");
-        //HW
+      
 
     }
 
 }
 
 function renderWeatherInfo(weatherInfo) {
-    //fistly, we have to fethc the elements 
+     
 
     const cityName = document.querySelector("[data-cityName]");
     const countryIcon = document.querySelector("[data-countryIcon]");
@@ -99,7 +99,7 @@ function renderWeatherInfo(weatherInfo) {
 
     console.log(weatherInfo);
 
-    //fetch values from weatherINfo object and put it UI elements
+   
     cityName.innerText = weatherInfo?.name;
     countryIcon.src = `https://flagcdn.com/144x108/${weatherInfo?.sys?.country.toLowerCase()}.png`;
     desc.innerText = weatherInfo?.weather?.[0]?.description;
@@ -117,7 +117,7 @@ function getLocation() {
         navigator.geolocation.getCurrentPosition(showPosition);
     }
     else {
-        //HW - show an alert for no gelolocation support available
+       
     }
 }
 
